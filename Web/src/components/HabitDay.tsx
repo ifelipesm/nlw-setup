@@ -26,7 +26,7 @@ export function HabitDay({completed,amount}:HabitDayProps){
             <span className="font-semibold text-zinc-400" >Segunda-Feira</span>
             <span className="mt-1 font-extrabold leading-tight text-3xl" >20/01</span>
             
-            <ProgressBar progress={20} />
+            <ProgressBar progress={completedPercentage} />
             
             <Popover.Arrow height={8} width={16} className="fill-zinc-900" />
           </Popover.Content>

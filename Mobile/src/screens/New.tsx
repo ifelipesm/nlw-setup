@@ -28,15 +28,17 @@ export function New(){
         Criar habito
         </Text>
         <Text className="mt-6 text-white font-semibold text-base" >
-        Qual sua disponibilidade?
+        Defina o seu hábito
         </Text>
 
         <TextInput 
         className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white focus:border-2  border-zinc-800 focus:border-green-700"
+        placeholder="Exercícios, dormir bem, etc..."
+        placeholderTextColor={colors.zinc[400]}
         />
 
         <Text 
-        className="font-semibold mt-4 mb-3 text-white text-base"
+        className="font-semibold mt-5 mb-4 text-white text-base"
         >
         Com que frequência?
         </Text>
@@ -54,8 +56,6 @@ export function New(){
 
         <TouchableOpacity 
         className="w-full h-14 mt-6 flex-row items-center justify-center bg-green-600 rounded-md"
-        placeholder="Exercícios,dormir bem,etc..."
-        placeholderTextColor={colors.zinc[400]}
         activeOpacity={0.7}
         >
           <Feather

@@ -9,7 +9,7 @@ import colors from 'tailwindcss/colors';
 const availableWeekDays = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado']
 
 export function New(){
-  const [weekDays,setWeekDays] = useState<[]>([]);
+  const [weekDays,setWeekDays] = useState<number[]>([]);
   function handleToggleWeekDays(weekDayIndex: number){
     if(weekDays.includes(weekDayIndex)){
       setWeekDays(prevState =>  prevState.filter(weekDay  =>  weekDay !== weekDayIndex));
